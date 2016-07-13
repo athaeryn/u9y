@@ -10,7 +10,16 @@
     <script>
       var input = document.querySelector('input')
       var output = document.querySelector('div[output]')
-      console.log(input, output)
+      input.addEventListener('input', function () {
+        output.innerText = internationalize(input.value)
+      })
+      function internationalizationize (input) {
+        if (input.length < 3) return input
+        var first = input[0]
+        var number = input.length - 2
+        var last = input[input.length - 1]
+        return first + number + last
+      }
     </script>
   </body>
 </html>
