@@ -3,6 +3,33 @@
   <head>
     <meta charset="utf8">
     <title>u9y</title>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        margin-bottom: .5rem;
+        padding: 0.5rem;
+        font-family: monospace;
+        font-size: 1.125rem;
+        text-align: center;
+      }
+      div[output]:before {
+        border-bottom: 1px solid black;
+        font-size: 2rem;
+        font-family: monospace;
+      }
+      div[output]:before {
+        content: "";
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <input type="text" value="internationalization" autofocus>
